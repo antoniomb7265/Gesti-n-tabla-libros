@@ -2,16 +2,19 @@
     require_once("lib/funcionesTabla.php");
     $tabla = generarTabla();
     $cabecera = array_keys($tabla[0]);
-    $desplegable = generarDesplegable();
 
     $key = $_GET['indice'];
+
     $registro = $tabla[$key];
-    
+
+    $Id = $registro['Id'];
     $Descripcion = $registro['Descripcion'];
     $Modelo = $registro['Modelo'];
     $Categoria = $registro['Categoria'];
     $Unidades = $registro['Unidades'];
     $Precio = $registro['Precio'];
+
+    require_once("lib/funcionesTabla.php");
 ?>
 <!doctype html>
 <?php
@@ -25,13 +28,13 @@
         ?>
         <section> 
             <article>
-                <legend>Editar articulo</legend>
-                <?php require_once("./template/partials/form_editar.php"); ?>
+                <legend>Descripción articulo</legend>
+                <?php require_once("./template/partials/form_describir.php"); ?>
             </article>
         </section>
-        </div>
         <?php 
             require_once("./template/partials/footer.php");
         ?>
+        </div>
     </body>
 </html>

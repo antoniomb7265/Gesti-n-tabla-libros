@@ -16,10 +16,10 @@
           Ordenar
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="ordenar.php?ordenando=Titulo">Titulo</a>
-          <a class="dropdown-item" href="ordenar.php?ordenando=Autor">Autor</a>
-          <a class="dropdown-item" href="ordenar.php?ordenando=Editorial">Editorial</a>
-          <a class="dropdown-item" href="ordenar.php?ordenando=Género">Genero</a>
+          <a class="dropdown-item" href="ordenar.php?ordenando=Descripcion">Descripcion</a>
+          <a class="dropdown-item" href="ordenar.php?ordenando=Modelo">Modelo</a>
+          <a class="dropdown-item" href="ordenar.php?ordenando=Categoria">Categoria</a>
+          <a class="dropdown-item" href="ordenar.php?ordenando=Unidades">Unidades</a>
           <a class="dropdown-item" href="ordenar.php?ordenando=Precio">Precio</a>
         </div>
       </li>

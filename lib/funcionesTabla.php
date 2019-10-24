@@ -1,5 +1,18 @@
 <?php
 
+function generarDesplegable(){
+
+    $desplegable = [
+        "Sobremesa",
+        "Pantalla",
+        "Impresora",
+        "Componente",
+        "Portatil"
+    ];
+    return $desplegable;
+
+}
+
 function generarTabla(){
     /* Fichero: FuncionesTabla.php
     Descripción: Colección de funciones para la gestión de una tabla
@@ -12,39 +25,48 @@ function generarTabla(){
     Argumentos de entrada: null
     Salida: Tabla de Libros */
 
+
     $tabla = 
     [
         [
             "Id" => "1",
-            "Titulo" => "Los Señores del tiempo",
-            "Autor" => "Garcia Senz de Urturi",
-            "Editorial" => "Anaya",
-            "Género" => "Novela",
-            "Precio" => "19.5€"
+            "Descripcion" => "Teclado gaming - Acer N90",
+            "Modelo" => "Acer N90",
+            "Categoria" => "Sobremesa",
+            "Unidades" => "60",
+            "Precio" => "14.50"
         ],
         [
             "Id" => "2",
-            "Titulo" => "El Rey Recibe",
-            "Autor" => "Eduardo Mendoza",
-            "Editorial" => "Ariel",
-            "Género" => "Novela",
-            "Precio" => "20.5€"
+            "Descripcion" => "Pantalla - 4k Asus Qled",
+            "Modelo" => "Asus Qled",
+            "Categoria" => "Pantalla",
+            "Unidades" => "15",
+            "Precio" => "190.00"
         ],
         [
             "Id" => "3",
-            "Titulo" => "Diario de una mujer",
-            "Autor" => "Eduardo Mendoza",
-            "Editorial" => "Santillana",
-            "Género" => "Juvenil",
-            "Precio" => "12.95€"
+            "Descripcion" => "Impresora - Brother C10 R",
+            "Modelo" => "Brother C10 R",
+            "Categoria" => "Impresora",
+            "Unidades" => "56",
+            "Precio" => "59.59"
         ],
         [
             "Id" => "4",
-            "Titulo" => "El Quijote de la Mancha",
-            "Autor" => "Miguel de Cervantes",
-            "Editorial" => "Planeta",
-            "Género" => "Novela",
-            "Precio" => "15.95€"
+            "Descripcion" => "Disco duro SSD - Kingston 128 GB",
+            "Modelo" => "Kingston 128 GB",
+            "Categoria" => "Componente",
+            "Unidades" => "78",
+            "Precio" => "49.00"
+        ],
+        [
+            "Id" => "5",
+            "Descripcion" => "Portatil gaming - MSI 8 GB RAM / 500 GB SSD",
+            "Modelo" => "MSI 8 GB RAM / 500 GB SSD",
+            "Categoria" => "Portatil",
+            "Unidades" => "24",
+            "Precio" => "1039.70"
         ]
     ];
 

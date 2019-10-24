@@ -2,12 +2,14 @@
   require_once("lib/funcionesTabla.php");
   $tabla = generarTabla();
   $cabecera = array_keys($tabla[0]);
+  $desplegable = generarDesplegable();
 
   //Variables del Formulario
   $formid = ultimoId($tabla) + 1;
   $formtitulo = $_POST['formtitulo'];
   $formautor = $_POST['formautor'];
-  $formcategoria = $_POST['formcategoria'];
+  // $formcategoria = $_POST['formcategoria'];
+  $formcategoria = $desplegable[$_POST['formcategoria']];
   $formeditorial = $_POST['formeditorial'];
   $formprecio = $_POST['formprecio'];
   

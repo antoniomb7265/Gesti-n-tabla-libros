@@ -1,3 +1,7 @@
+<?php 
+  require_once("lib/funcionesTabla.php");
+  $desplegable = generarDesplegable();
+?>
 <!doctype html>
 <html lang="es">
   <head>
@@ -13,6 +17,7 @@
         require_once("./template/partials/head.php");
       ?>
       <section> 
+        <legend>Nuevo articulo</legend>
         <article>
           <?php
             require_once("./template/partials/form.php");
